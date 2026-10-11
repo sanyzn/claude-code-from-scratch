@@ -134,6 +134,26 @@ def analyze(rows, window):
         dy = [b[key] - a[key] for a, b in zip(pts, pts[1:])]
         return ols(dx, dy)
     out["pass_sc_brent"] = pass_through("sc_brent")
+    # 累计 / 边际传导率：相对第一个配对点、相对上一个配对点
+    pts = [r for r in rows if r.get("transport") is not None and r.get("sc_brent") is not None]
+    steps = []
+    for i, r in enumerate(pts[1:], 1):
+        d0 = r["transport"] - pts[0]["transport"]
+        d1 = r["transport"] - pts[i - 1]["transport"]
+        steps.append(dict(date=r["date"],
+                          cum=(r["sc_brent"] - pts[0]["sc_brent"]) / d0 if abs(d0) > 0.5 else None,
+                          marg=(r["sc_brent"] - pts[i - 1]["sc_brent"]) / d1 if abs(d1) > 0.5 else None))
+    out["pass_steps"] = steps
+    # SC 价格变化归因（首尾两个完整点）：ΔSC = Brent 贡献 + 价差贡献 + 汇率贡献
+    full = [r for r in rows if r.get("sc") and r.get("fx") and r.get("brent") and r.get("sc_brent") is not None]
+    if len(full) >= 2:
+        a, b = full[0], full[-1]
+        fx_mid = (a["fx"] + b["fx"]) / 2
+        out["sc_attrib"] = dict(start=a["date"], end=b["date"], d_sc=b["sc"] - a["sc"],
+                                brent=(b["brent"] - a["brent"]) * fx_mid,
+                                spread=(b["sc_brent"] - a["sc_brent"]) * fx_mid,
+                                fx=(b["fx"] - a["fx"]) * ((a["sc_usd"] + b["sc_usd"]) / 2),
+                                freight=((b.get("transport") or 0) - (a.get("transport") or 0)) * fx_mid)
     out["pass_dubai_brent"] = pass_through("dubai_brent")
     out["levels_sc_brent"] = ols([r.get("transport") for r in rows], [r.get("sc_brent") for r in rows])
     if any(r.get("fwd_freight") is not None for r in rows):
@@ -182,6 +202,11 @@ def report(o):
           f" → 即期运费每涨 1 $/bbl，SC 相对 Brent 约多涨 {p['beta']:.2f} $/bbl")
     else:
         w("- SC−Brent 与运费的配对样本不足 3 个，无法估计传导系数")
+    if o.get("pass_steps"):
+        w("\n| 日期 | 累计传导率（相对首个点） | 边际传导率（相对上一个点） |\n|---|---|---|")
+        for st in o["pass_steps"]:
+            w(f"| {st['date']} | {fmt(st['cum'], pct=True)} | {fmt(st['marg'], pct=True)} |")
+        w("\n边际传导率持续下降，说明期货已经不再跟随即期运费（市场认为高运费是脉冲，或到岸成本已超过国内能接受的上限）。\n")
     if q:
         w(f"- Δ(Dubai−Brent) = {q['beta']:.2f} × Δ运费（n={q['n']}，R²={fmt(q['r2'])}）→ 负值表示产地 FOB 价被压低，卖方吸收约 {-q['beta']:.2f}")
     if lv:
@@ -189,6 +214,12 @@ def report(o):
     lf = o.get("levels_sc_brent_fwd")
     if lf:
         w(f"- 水平值：SC−Brent = {lf['alpha']:.2f} + {lf['beta']:.2f} × 远期运费（n={lf['n']}，R²={fmt(lf['r2'])}）")
+    at = o.get("sc_attrib")
+    if at:
+        w(f"\n**SC 价格变化归因（{at['start']}→{at['end']}，元/桶）**：ΔSC {at['d_sc']:+.1f} = Brent {at['brent']:+.1f}"
+          f" + 内外价差 {at['spread']:+.1f} + 汇率 {at['fx']:+.1f}（近似，交叉项计入残差）；"
+          f"同期即期运费变化折合 {at['freight']:+.1f} 元/桶，价差部分只占其 "
+          f"{(at['spread'] / at['freight'] * 100) if at['freight'] else float('nan'):.0f}%")
     w("\n解读：β≈1 表示运费几乎全部由买方/到岸价承担；β 明显小于 1 时，差额要么由产地卖方吸收（看 Dubai−Brent），"
       "要么说明期货在交易远期运费而不是即期指数（看第 1 节最后两列哪一列更接近 0），剩下的是国内供需、仓单、情绪等因素。"
       "样本少于 20 个点时，只能把 β 当作方向参考。\n")
