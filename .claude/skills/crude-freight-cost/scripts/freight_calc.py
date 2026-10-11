@@ -191,7 +191,7 @@ def main(argv=None):
     s = sub.add_parser("ws-from-tce"); add_route(s); s.add_argument("--tce", type=float, required=True)
 
     s = sub.add_parser("warrisk")
-    s.add_argument("--pct", type=float, required=True, help="战争险费率，占船价 %")
+    s.add_argument("--pct", type=float, required=True, help="战争险费率，占船价百分比")
     s.add_argument("--hull", type=float, required=True, help="船价 USD")
     s.add_argument("--bbl", type=float, default=270000 * 7.33)
 

@@ -138,12 +138,47 @@ def main():
     w(f"- 附：10/8 TCE 141.26 万$/天 反推 WS ≈ {oct8['ws']:.0f}，运费 ≈ {oct8['usd_t'] / bpt:.1f} $/bbl"
       f"（未计战争险）。招商轮船/国金证券称该航线成交稀少、指数失真——这个数是“指数口径”，不是实际成交价。\n")
 
+    # ---- 检验 6：样本外 TD3C 数据点（未参与任何拟合）----
+    w("## 检验 6：样本外数据点（物理模型，平准费率 20.21）\n")
+    w("| 日期 | WS | 燃油价(假设) | 模型 TCE | 公布 TCE | 误差 |\n|---|---|---|---|---|---|")
+    for x in d.get("td3c_out_of_sample", []):
+        r = fc.tce_from_ws(x["ws"], flat_sse, x["vlsfo"], p)
+        err = (r["tce"] - x["tce"]) / x["tce"] * 100
+        w(f"| {x['date']} | {x['ws']} | {x['vlsfo']} | {r['tce']:,.0f} | {x['tce']:,} | {err:+.2f}% |")
+        if abs(err) > 5:
+            fails.append(f"检验6 {x['date']} 误差 {err:.2f}%")
+    w("\n低 WS 时 TCE 对燃油价和港口费假设更敏感（WS126.5 时燃油 ±50 $/t 约影响 TCE ±3%）。\n")
+
+    # ---- 检验 7：运费占比与期货传导 ----
+    import futures_impact as fi
+    rows = fi.load(os.path.join(HERE, "..", "references", "sample_2026.csv"))
+    o = fi.analyze(rows, 6)
+    byd = {r["date"]: r for r in o["rows"]}
+    w("## 检验 7：运费占比、对期货价差的传导（sample_2026.csv）\n")
+    jan, octr = byd["2026-01-15"], byd["2026-10-08"]
+    w(f"- 运费占 Brent 到岸：1 月 {jan['share_brent'] * 100:.1f}%（Poten 称 3%）→ 10/8 {octr['share_brent'] * 100:.1f}%"
+      f"（Poten 称 27%、Kpler 称 25%）。占 SC 价格 10/8 为 {octr['share_sc'] * 100:.1f}%。")
+    poten_ok = abs(octr["share_brent"] - 0.27) < 0.03 and abs(jan["share_brent"] - 0.03) < 0.015
+    if not poten_ok:
+        fails.append("检验7 运费占比与 Poten 偏差超过阈值")
+    w(f"- Poten 的 27% 用 33÷(33+89)=27% 可复现，说明其分母是约 89 $/bbl 的油价，不是文中提到的 120 美元。")
+    lv = o["levels_sc_brent"]
+    pt = o["pass_sc_brent"]
+    w(f"- SC−Brent 对即期运费：水平回归 β={lv['beta']:.2f}（n={lv['n']}，R²={lv['r2']:.2f}）；差分回归 β={pt['beta']:.2f}±{pt['se']:.2f}（n={pt['n']}）。"
+      f"8/27→10/8 运费涨 {octr['freight'] - byd['2026-08-27']['freight']:.1f}，SC−Brent 只涨 {octr['sc_brent'] - byd['2026-08-27']['sc_brent']:.1f}"
+      f" → **即期运费只有约一半进了内外价差**，与能源研发中心“运费急升而内外价差相对平淡”的观察一致。")
+    w(f"- 10/8 SC−Dubai 现货 = {octr['sc_dubai']:.2f} $/bbl：扣即期运费后残差 {octr['resid_spot']:.1f}，扣远期运费（1 年期租反推 {octr['fwd_freight']:.2f}）后残差 {octr['resid_fwd']:.1f}"
+      f" → **期货定价更贴近远期运费，而不是即期 TD3C 指数**。")
+    if abs(octr["resid_fwd"]) > abs(octr["resid_spot"]):
+        fails.append("检验7 远期运费解释力不如即期")
+    w("- 局限：SC/Brent/汇率配对的只有 4–5 个点，Brent 部分取月均/月末，β 仅作方向参考；用户本地有日度数据时应重跑。\n")
+
     w("## 结论\n")
     if fails:
         w("**未通过的硬性检查：**\n" + "\n".join(f"- {f}" for f in fails))
     else:
         w("全部硬性检查通过（检验 1 留一法误差 ≤3%，检验 2 平准费率两条路径差 ≤3%，"
-          "检验 3 A/B 级数据点误差 ≤5%，检验 4 单位换算差 ≤3%）。")
+          "检验 3 A/B 级数据点误差 ≤5%，检验 4 单位换算差 ≤3%，检验 6 样本外误差 ≤5%，检验 7 运费占比与 Poten 偏差 ≤3 个百分点且远期运费解释力强于即期）。")
     print("\n".join(out))
     return 1 if fails else 0
 
