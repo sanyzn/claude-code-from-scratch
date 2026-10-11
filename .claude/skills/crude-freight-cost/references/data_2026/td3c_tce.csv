@@ -1,0 +1,29 @@
+obs_date,obs_type,tier,source,url,note,tce_usd_day,model_ws,model_usd_bbl,model_low,model_high,bunker_assumed
+2026-01-23,周报读数,A,Baltic tanker report week 4,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-4.html,,112394,128.0,3.53,3.36,3.74,470
+2026-01-30,周报读数,A,Baltic tanker report week 5,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-5.html,,75807,95.6,2.64,2.46,2.84,470
+2026-02-13,转引,C,搜索摘要称“春节前 2/13 为 12.2 万美元/天”,,出处未定位,122000,138.2,3.81,3.64,4.02,500
+2026-02-20,转引,B,新浪财经 2026-02-24 转引 Baltic,https://finance.sina.com.cn/roll/2026-02-24/doc-inhnwmhu9050897.shtml,,151208,164.0,4.53,4.35,4.73,500
+2026-02-23,转引,C,搜索摘要称“2/23 升至 17.6 万美元/天”,,出处未定位,176000,186.0,5.13,4.96,5.34,500
+2026-02-26,周报读数,B,波交所周报 2/27（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0302/63049.html,,209550,215.7,5.96,5.78,6.16,500
+2026-03-02,转引,C,搜索摘要称“3/2 单日 TCE 涨 94% 至 42.4 万”,,出处未定位,424000,427.4,11.8,11.62,12.0,900
+2026-03-12,周报读数,B,波交所周报 3/13（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0316/219295.html,,326198,340.8,9.41,9.23,9.61,900
+2026-03-19,周报读数,B,波交所周报 3/20（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0323/219432.html,,400928,407.0,11.24,11.06,11.44,900
+2026-03-26,周报读数,B,波交所周报 3/27（信德海事转载）,https://www.xindemarinenews.com/m/view.php?aid=63306,,356483,367.6,10.15,9.97,10.35,900
+2026-04-09,周报读数,A,Baltic tanker report week 15,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-15.html,原文为 over $444200,444200,442.5,12.22,12.04,12.42,850
+2026-04-16,周报读数,A,Baltic tanker report week 16,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-16.html,原文为 almost $474000,474000,468.9,12.95,12.77,13.15,850
+2026-04-24,周报读数,B,波交所周报 4/24（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0427/63445.html,,467408,463.1,12.79,12.61,12.99,850
+2026-05-11,转引,B,Fairway ETA 转引 Baltic,https://www.fairwayeta.com/insights/td3c-index-doesnt-exist-may-2026,,462102,457.0,12.62,12.44,12.82,825
+2026-06-15,转引,B,Lloyd's List 6/16 转引 Baltic,https://www.lloydslist.com/LL1157473/How-strait-reopening-could-impact-VLCC-rates-in-Middle-East-and-Atlantic,,412888,409.5,11.31,11.13,11.51,753
+2026-06-18,周报读数,B,波交所周报 6/19（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0622/221871.html,原文为接近 461000,461000,452.1,12.48,12.31,12.69,753
+2026-07-30,周报读数,A,Baltic tanker report week 31,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-31.html,,423434,423.1,11.68,11.5,11.88,830
+2026-09-03,周报读数,A,Baltic tanker report week 36,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-36.html,原文为 just under $704000,704000,672.0,18.56,18.38,18.76,840
+2026-09-08,转引,B,财通交运转引 Baltic,https://news.qq.com/rain/a/20260910A09XM700,,760000,721.6,19.93,19.75,20.13,840
+2026-09-10,转引,B,信德海事转引 Baltic,https://www.xindemarinenews.com/news/2098327758360031234,,862150,812.1,22.42,22.25,22.63,840
+2026-09-11,转引,C,搜索摘要称“9/11 TD3C 982072 美元/天（Baltic）”,,出处未定位,982072,918.3,25.35,25.18,25.56,840
+2026-09-14,转引,B,Portnews 转引 Baltic,https://en.portnews.ru/news/397004/,约数,1035000,965.1,26.65,26.47,26.85,840
+2026-09-15,转引,C,搜索摘要称“9/15 约 109.9 万”,,出处未定位；约数,1099000,1021.8,28.21,28.04,28.42,840
+2026-09-17,转引,B,BigGo Finance 转引,https://finance.biggo.com/news/1fcd3cf9-dd86-45c1-ab04-1be921466337,,1212500,1122.3,30.99,30.81,31.19,840
+2026-09-21,转引,C,搜索摘要称 Reuters 引 LSEG 数据 127 万,,出处未定位；LSEG 口径未必等于 Baltic,1270000,1173.2,32.39,32.22,32.6,840
+2026-09-24,转引,B,Oil & Gas Middle East 转引 Baltic（截至 9/25 当周）,https://www.oilandgasmiddleeast.com/news/what-is-happening-with-vlcc-rates,,1235414,1142.6,31.55,31.37,31.75,840
+2026-10-06,转引,B,21 世纪经济报道转引券商（Baltic）,https://www.21jingji.com/article/20261009/herald/0ac15a6361f50a0dda3d2ad6319f6641.html,,1347000,1241.4,34.28,34.1,34.48,840
+2026-10-08,转引,B,金融界转引 Baltic,https://finance.jrj.com.cn/2026/10/09213258655186.shtml,,1412600,1299.5,35.88,35.7,36.08,840

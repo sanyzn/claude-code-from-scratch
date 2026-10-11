@@ -1,0 +1,4 @@
+obs_date,obs_type,tier,source,url,note,metric,value,usd_bbl,method
+2026-05-08,由两周变动推算,B,波交所周报 5/22 称“较两周前跌 45 点至 WS402.5”,https://www.eworldship.com/html/2026/zuchuanshichang_0526/221106.html,402.5+45；非直接报价,WS,447.5,12.36,WS×平准费率÷桶/吨
+2026-08,月均统计（推算）,B,财通交运：9/8 TCE 76.0 万，较 8 月均值 +142%,https://news.qq.com/rain/a/20260910A09XM700,760000÷2.42；8 月均值，不是某日读数,TCE_usd_day,314000.0,9.01,模型估计：TCE→WS 326.2，燃油 830
+2026-09-30,由百分比推算,B,券商称 10/6 为 134.7 万、较 9/30 +11.1%,https://www.21jingji.com/article/20261009/herald/0ac15a6361f50a0dda3d2ad6319f6641.html,1347000÷1.111；非直接报价,TCE_usd_day,1212000.0,30.98,模型估计：TCE→WS 1121.9，燃油 840

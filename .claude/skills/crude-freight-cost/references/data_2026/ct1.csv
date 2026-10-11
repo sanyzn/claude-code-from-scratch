@@ -1,0 +1,5 @@
+obs_date,usd_t,usd_bbl,obs_type,tier,source,url,note
+2026-06-01,57.43,7.83,指数读数,A,上海航运交易所 CTFI 分航线页（搜索摘要）,https://www.sse.net.cn/index/singleIndex?indexType=ctfi,
+2026-07-06,56.98,7.77,指数读数,A,交通运输部 CTFI 页（WS281.94，TCE 272950）,https://mwtis.mot.gov.cn/syportal/gatewaybusin/queryFreightIndex/CTFI,
+2026-09-11,165.48,22.58,指数读数,A,上海航运交易所 CTFI 分航线页（搜索摘要）,https://www.sse.net.cn/index/singleIndex?indexType=ctfi,
+2026-10-09,266.18,36.31,用户提供（未独立核实）,C,审核意见提供；本会话搜索未能确认,,同日 CTFI 综合指数 19656.01 点（同花顺）可查

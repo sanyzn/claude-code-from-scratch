@@ -1,0 +1,7 @@
+obs_date,item,value,unit,basis,tier,source_desc,source_url
+2026-01-30,BRENT,72.25,usd_bbl,1 月末收盘（代用）,C,Marketsgrid 月末收盘表,https://marketsgrid.com/energy/brent-crude-oil-price-history/2026
+2026-02-20,BRENT,71.32,usd_bbl,2 月末收盘（代用）,C,Marketsgrid 月末收盘表,https://marketsgrid.com/energy/brent-crude-oil-price-history/2026
+2026-04-09,BRENT,117.29,usd_bbl,4 月均价（代用）,B,Statista 月均价,https://www.statista.com/statistics/262861/uk-brent-crude-oil-monthly-price-development/
+2026-05-11,BRENT,92.88,usd_bbl,5 月末收盘（代用）,C,Marketsgrid 月末收盘表,https://marketsgrid.com/energy/brent-crude-oil-price-history/2026
+2026-09-03,BRENT,114.0,usd_bbl,9 月均价（代用）,A,EIA STEO：9 月均价约 114,https://www.eia.gov/outlooks/steo/report/global_oil.php
+2026-09-24,BRENT,114.0,usd_bbl,9 月均价（代用）,A,EIA STEO：9 月均价约 114,https://www.eia.gov/outlooks/steo/report/global_oil.php

@@ -1,0 +1,68 @@
+obs_date,series,metric,value,obs_type,tier,source_desc,source_url,note
+2026-01-09,TD3C,WS,74.17,周报读数,B,波交所周报 1/9（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0112/217794.html,
+2026-01-23,TD3C,WS,126.5,周报读数,A,Baltic tanker report week 4,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-4.html,同报 TCE 112394
+2026-01-23,TD3C,TCE_usd_day,112394,周报读数,A,Baltic tanker report week 4,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-4.html,
+2026-01-30,TD3C,WS,94.61,周报读数,A,Baltic tanker report week 5,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-5.html,
+2026-01-30,TD3C,TCE_usd_day,75807,周报读数,A,Baltic tanker report week 5,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-5.html,
+2026-02-13,TD3C,TCE_usd_day,122000,转引,C,搜索摘要称“春节前 2/13 为 12.2 万美元/天”,,出处未定位
+2026-02-20,TD3C,WS,163.28,转引,B,新浪财经 2026-02-24 转引 Baltic,https://finance.sina.com.cn/roll/2026-02-24/doc-inhnwmhu9050897.shtml,
+2026-02-20,TD3C,TCE_usd_day,151208,转引,B,新浪财经 2026-02-24 转引 Baltic,https://finance.sina.com.cn/roll/2026-02-24/doc-inhnwmhu9050897.shtml,
+2026-02-23,TD3C,TCE_usd_day,176000,转引,C,搜索摘要称“2/23 升至 17.6 万美元/天”,,出处未定位
+2026-02-26,TD3C,WS,216.89,周报读数,B,波交所周报 2/27（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0302/63049.html,周报未写明评估日，按周四计
+2026-02-26,TD3C,TCE_usd_day,209550,周报读数,B,波交所周报 2/27（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0302/63049.html,
+2026-03-02,TD3C,TCE_usd_day,424000,转引,C,搜索摘要称“3/2 单日 TCE 涨 94% 至 42.4 万”,,出处未定位
+2026-03-06,TD3C,WS,466.67,周报中的周五评估,B,波交所周报 3/13（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0316/219295.html,
+2026-03-12,TD3C,WS,348.89,周报读数,B,波交所周报 3/13（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0316/219295.html,撰稿时读数
+2026-03-12,TD3C,TCE_usd_day,326198,周报读数,B,波交所周报 3/13（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0316/219295.html,
+2026-03-13,TD3C,WS,427.67,周报中的周五评估,B,波交所周报 3/20（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0323/219432.html,
+2026-03-19,TD3C,WS,413.89,周报读数,B,波交所周报 3/20（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0323/219432.html,
+2026-03-19,TD3C,TCE_usd_day,400928,周报读数,B,波交所周报 3/20（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0323/219432.html,
+2026-03-20,TD3C,WS,400,周报中的周五评估,B,波交所周报 3/27（信德海事转载）,https://www.xindemarinenews.com/m/view.php?aid=63306,
+2026-03-26,TD3C,WS,366,周报读数,B,波交所周报 3/27（信德海事转载）,https://www.xindemarinenews.com/m/view.php?aid=63306,
+2026-03-26,TD3C,TCE_usd_day,356483,周报读数,B,波交所周报 3/27（信德海事转载）,https://www.xindemarinenews.com/m/view.php?aid=63306,
+2026-04-09,TD3C,WS,444,周报读数,A,Baltic tanker report week 15,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-15.html,
+2026-04-09,TD3C,TCE_usd_day,444200,周报读数,A,Baltic tanker report week 15,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-15.html,原文为 over $444200
+2026-04-16,TD3C,WS,467.22,周报读数,A,Baltic tanker report week 16,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-16.html,
+2026-04-16,TD3C,TCE_usd_day,474000,周报读数,A,Baltic tanker report week 16,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-16.html,原文为 almost $474000
+2026-04-24,TD3C,WS,459.28,周报读数,B,波交所周报 4/24（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0427/63445.html,
+2026-04-24,TD3C,TCE_usd_day,467408,周报读数,B,波交所周报 4/24（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0427/63445.html,
+2026-05-08,TD3C,WS,447.5,由两周变动推算,B,波交所周报 5/22 称“较两周前跌 45 点至 WS402.5”,https://www.eworldship.com/html/2026/zuchuanshichang_0526/221106.html,402.5+45；非直接报价
+2026-05-11,TD3C,WS,458.75,转引,B,Fairway ETA 转引 Baltic,https://www.fairwayeta.com/insights/td3c-index-doesnt-exist-may-2026,
+2026-05-11,TD3C,TCE_usd_day,462102,转引,B,Fairway ETA 转引 Baltic,https://www.fairwayeta.com/insights/td3c-index-doesnt-exist-may-2026,
+2026-05-21,TD3C,WS,402.5,周报读数,B,波交所周报 5/22（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0526/221106.html,
+2026-06-15,TD3C,TCE_usd_day,412888,转引,B,Lloyd's List 6/16 转引 Baltic,https://www.lloydslist.com/LL1157473/How-strait-reopening-could-impact-VLCC-rates-in-Middle-East-and-Atlantic,
+2026-06-18,TD3C,WS,450.56,周报读数,B,波交所周报 6/19（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0622/221871.html,
+2026-06-18,TD3C,TCE_usd_day,461000,周报读数,B,波交所周报 6/19（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0622/221871.html,原文为接近 461000
+2026-07-03,TD3C,WS,293.89,转引,B,Signal Group 周报 wk27,https://www.thesignalgroup.com/weekly-market-monitor/weekly-tanker-market-monitor-week-27-2026,
+2026-07-30,TD3C,WS,424.33,周报读数,A,Baltic tanker report week 31,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-31.html,
+2026-07-30,TD3C,TCE_usd_day,423434,周报读数,A,Baltic tanker report week 31,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-31.html,
+2026-08,TD3C,TCE_usd_day,314000,月均统计（推算）,B,财通交运：9/8 TCE 76.0 万，较 8 月均值 +142%,https://news.qq.com/rain/a/20260910A09XM700,760000÷2.42；8 月均值，不是某日读数
+2026-09-03,TD3C,WS,677.22,周报读数,A,Baltic tanker report week 36,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-36.html,
+2026-09-03,TD3C,TCE_usd_day,704000,周报读数,A,Baltic tanker report week 36,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-36.html,原文为 just under $704000
+2026-09-08,TD3C,TCE_usd_day,760000,转引,B,财通交运转引 Baltic,https://news.qq.com/rain/a/20260910A09XM700,
+2026-09-10,TD3C,WS,821.11,转引,B,信德海事转引 Baltic,https://www.xindemarinenews.com/news/2098327758360031234,
+2026-09-10,TD3C,TCE_usd_day,862150,转引,B,信德海事转引 Baltic,https://www.xindemarinenews.com/news/2098327758360031234,
+2026-09-11,TD3C,TCE_usd_day,982072,转引,C,搜索摘要称“9/11 TD3C 982072 美元/天（Baltic）”,,出处未定位
+2026-09-14,TD3C,TCE_usd_day,1035000,转引,B,Portnews 转引 Baltic,https://en.portnews.ru/news/397004/,约数
+2026-09-15,TD3C,TCE_usd_day,1099000,转引,C,搜索摘要称“9/15 约 109.9 万”,,出处未定位；约数
+2026-09-17,TD3C,TCE_usd_day,1212500,转引,B,BigGo Finance 转引,https://finance.biggo.com/news/1fcd3cf9-dd86-45c1-ab04-1be921466337,
+2026-09-21,TD3C,TCE_usd_day,1270000,转引,C,搜索摘要称 Reuters 引 LSEG 数据 127 万,,出处未定位；LSEG 口径未必等于 Baltic
+2026-09-24,TD3C,WS,1157.5,转引,B,Oil & Gas Middle East 转引 Baltic（截至 9/25 当周）,https://www.oilandgasmiddleeast.com/news/what-is-happening-with-vlcc-rates,
+2026-09-24,TD3C,TCE_usd_day,1235414,转引,B,Oil & Gas Middle East 转引 Baltic（截至 9/25 当周）,https://www.oilandgasmiddleeast.com/news/what-is-happening-with-vlcc-rates,
+2026-09-30,TD3C,TCE_usd_day,1212000,由百分比推算,B,券商称 10/6 为 134.7 万、较 9/30 +11.1%,https://www.21jingji.com/article/20261009/herald/0ac15a6361f50a0dda3d2ad6319f6641.html,1347000÷1.111；非直接报价
+2026-10-06,TD3C,TCE_usd_day,1347000,转引,B,21 世纪经济报道转引券商（Baltic）,https://www.21jingji.com/article/20261009/herald/0ac15a6361f50a0dda3d2ad6319f6641.html,
+2026-10-08,TD3C,TCE_usd_day,1412600,转引,B,金融界转引 Baltic,https://finance.jrj.com.cn/2026/10/09213258655186.shtml,
+2026-06-01,CT1,usd_t,57.43,指数读数,A,上海航运交易所 CTFI 分航线页（搜索摘要）,https://www.sse.net.cn/index/singleIndex?indexType=ctfi,
+2026-07-06,CT1,usd_t,56.98,指数读数,A,交通运输部 CTFI 页（WS281.94，TCE 272950）,https://mwtis.mot.gov.cn/syportal/gatewaybusin/queryFreightIndex/CTFI,
+2026-09-11,CT1,usd_t,165.48,指数读数,A,上海航运交易所 CTFI 分航线页（搜索摘要）,https://www.sse.net.cn/index/singleIndex?indexType=ctfi,
+2026-10-09,CT1,usd_t,266.18,用户提供（未独立核实）,C,审核意见提供；本会话搜索未能确认,,同日 CTFI 综合指数 19656.01 点（同花顺）可查
+2026-01-30,TD22,lumpsum_musd,13.0,周报读数,A,Baltic tanker report week 5（略高于 1300 万）,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-5.html,
+2026-02-13,TD22,lumpsum_musd,14.0,周报读数,A,Baltic tanker report week 7（略高于 1400 万）,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-7.html,
+2026-09-04,TD22,lumpsum_musd,29.5,转引,C,媒体转引 S&P Global：美湾→中国包干 2950 万,,出处未定位
+2026-09-18,TD22,lumpsum_musd,52.06,转引,B,ETI week 38（TD22 升至 5206 万）,https://etint.substack.com/p/eti-twmo-week-38-2026,
+2026-10-08,TD22,lumpsum_musd,76.0,成交（非指数）,B,Trafigura 包干 7600 万（IndexBox 转引 Bloomberg）,https://indexbox.io/blog/record-us-asia-crude-freight-costs-close-arbitrage-push-asian-refiners-to-middle-east-and-south-america,单笔成交，日期为报道时间
+2026-01-20,PERIOD_TC,TCE_usd_day,76900,期租成交,A,Frontline 7 艘 1 年期租（1 月下旬至 4 月起租）,https://www.shipuniverse.com/?p=13331,
+2026-02-24,PERIOD_TC,TCE_usd_day,105000,期租成交,A,DHT 1 年期租,https://www.seatrade-maritime.com/tankers/dht-crosses-100k-per-day-with-latest-one-year-vlcc-charter,
+2026-06-25,PERIOD_TC,TCE_usd_day,120000,期租成交,A,Frontline 新船 1 年期租（6 月下旬起租）,https://hellenicshippingnews.com/1h-2026-shipping-market-trends-highlights,
+2026-10-02,PERIOD_TC,TCE_usd_day,269000,转引,B,财通交运：VLCC 1 年期租 26.9 万,https://m.21jingji.com/article/20261009/herald/0ac15a6361f50a0dda3d2ad6319f6641.html,另一来源 ETI 称 21.3 万
+2026-06-15,FFA_Q4,TCE_usd_day,181163,转引,B,Lloyd's List：Q4-26 TD3C FFA,https://www.lloydslist.com/LL1157473/How-strait-reopening-could-impact-VLCC-rates-in-Middle-East-and-Atlantic,

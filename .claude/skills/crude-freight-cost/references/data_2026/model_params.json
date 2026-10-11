@@ -1,0 +1,42 @@
+{
+  "model": "本 skill 的 TD3C 航次模型（Baltic 2015 年规格 + 估算航程），未与 Baltic 现行规格文件核对",
+  "flat_rate_usd_t": 20.21,
+  "bbl_per_t_td3c": 7.3194,
+  "bbl_per_t_ct1": 7.33,
+  "td22_cargo_bbl": 2000000,
+  "cargo_t": 270000,
+  "distance_nm_each_way": 5900,
+  "weather_margin": 0.05,
+  "speed_laden_kn": 13.0,
+  "speed_ballast_kn": 12.5,
+  "cons_laden_t_day": 70.0,
+  "cons_ballast_t_day": 53.0,
+  "port_days": {
+    "load": 2,
+    "discharge": 3,
+    "idle": 1
+  },
+  "port_cons_t_day": {
+    "load": 20,
+    "discharge": 110,
+    "idle": 10
+  },
+  "round_trip_days": 46.51,
+  "fuel_t_per_voyage": 2864,
+  "port_cost_usd": 150000,
+  "commission": 0.0375,
+  "bunker_usd_t_by_month": {
+    "01": 470,
+    "02": 500,
+    "03": 900,
+    "04": 850,
+    "05": 825,
+    "06": 753,
+    "07": 830,
+    "08": 830,
+    "09": 840,
+    "10": 840
+  },
+  "sensitivity": "低/高 = 燃油 −100/+100 $/t 且港口费 10 万/25 万美元",
+  "backtest": "references/validation.md：同口径复现 Baltic 公布 TCE，A/B 级点误差 −1.5%~+1.2%"
+}

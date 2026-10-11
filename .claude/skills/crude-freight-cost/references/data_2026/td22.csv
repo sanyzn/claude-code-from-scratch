@@ -1,0 +1,6 @@
+obs_date,lumpsum_musd,usd_bbl,obs_type,tier,source,url,note
+2026-01-30,13.0,6.5,周报读数,A,Baltic tanker report week 5（略高于 1300 万）,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-5.html,
+2026-02-13,14.0,7.0,周报读数,A,Baltic tanker report week 7（略高于 1400 万）,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-7.html,
+2026-09-04,29.5,14.75,转引,C,媒体转引 S&P Global：美湾→中国包干 2950 万,,出处未定位
+2026-09-18,52.06,26.03,转引,B,ETI week 38（TD22 升至 5206 万）,https://etint.substack.com/p/eti-twmo-week-38-2026,
+2026-10-08,76.0,38.0,成交（非指数）,B,Trafigura 包干 7600 万（IndexBox 转引 Bloomberg）,https://indexbox.io/blog/record-us-asia-crude-freight-costs-close-arbitrage-push-asian-refiners-to-middle-east-and-south-america,单笔成交，日期为报道时间

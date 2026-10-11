@@ -167,10 +167,9 @@ def main():
     w(f"- SC−Brent 对即期运费：水平回归 β={lv['beta']:.2f}（n={lv['n']}，R²={lv['r2']:.2f}）；差分回归 β={pt['beta']:.2f}±{pt['se']:.2f}（n={pt['n']}）。"
       f"8/27→10/8 运费涨 {octr['freight'] - byd['2026-08-27']['freight']:.1f}，SC−Brent 只涨 {octr['sc_brent'] - byd['2026-08-27']['sc_brent']:.1f}"
       f" → **即期运费只有约一半进了内外价差**，与能源研发中心“运费急升而内外价差相对平淡”的观察一致。")
-    w(f"- 10/8 SC−Dubai 现货 = {octr['sc_dubai']:.2f} $/bbl：扣即期运费后残差 {octr['resid_spot']:.1f}，扣远期运费（1 年期租反推 {octr['fwd_freight']:.2f}）后残差 {octr['resid_fwd']:.1f}"
-      f" → **期货定价更贴近远期运费，而不是即期 TD3C 指数**。")
-    if abs(octr["resid_fwd"]) > abs(octr["resid_spot"]):
-        fails.append("检验7 远期运费解释力不如即期")
+    w(f"- 10/8 SC−Dubai 现货 = {octr['sc_dubai']:.2f} $/bbl：扣由 TCE 反推的即期运费估计后残差 {octr['resid_spot']:.1f}，"
+      f"扣一年期租条件下的航次成本估算（{octr['fwd_freight']:.2f}）后残差 {octr['resid_fwd']:.1f}。"
+      "单点观察，只作线索，不构成“期货按哪种运费定价”的结论（即期为模型估计，Dubai 取 10/7，期租不是远期运价）。")
     w("- 局限：SC/Brent/汇率配对的只有 4–5 个点，Brent 部分取月均/月末，β 仅作方向参考；用户本地有日度数据时应重跑。\n")
 
     w("## 结论\n")
@@ -178,7 +177,7 @@ def main():
         w("**未通过的硬性检查：**\n" + "\n".join(f"- {f}" for f in fails))
     else:
         w("全部硬性检查通过（检验 1 留一法误差 ≤3%，检验 2 平准费率两条路径差 ≤3%，"
-          "检验 3 A/B 级数据点误差 ≤5%，检验 4 单位换算差 ≤3%，检验 6 样本外误差 ≤5%，检验 7 运费占比与 Poten 偏差 ≤3 个百分点且远期运费解释力强于即期）。")
+          "检验 3 A/B 级数据点误差 ≤5%，检验 4 单位换算差 ≤3%，检验 6 样本外误差 ≤5%，检验 7 运费占比与 Poten 偏差 ≤3 个百分点）。检验 7 的传导和残差部分只是描述性观察，不设通过标准。")
     print("\n".join(out))
     return 1 if fails else 0
 

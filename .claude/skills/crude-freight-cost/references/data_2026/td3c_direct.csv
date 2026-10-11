@@ -1,0 +1,23 @@
+obs_date,obs_type,tier,source,url,note,ws,usd_t,usd_bbl
+2026-01-09,周报读数,B,波交所周报 1/9（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0112/217794.html,,74.17,14.99,2.05
+2026-01-23,周报读数,A,Baltic tanker report week 4,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-4.html,同报 TCE 112394,126.5,25.57,3.49
+2026-01-30,周报读数,A,Baltic tanker report week 5,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-5.html,,94.61,19.12,2.61
+2026-02-20,转引,B,新浪财经 2026-02-24 转引 Baltic,https://finance.sina.com.cn/roll/2026-02-24/doc-inhnwmhu9050897.shtml,,163.28,33.0,4.51
+2026-02-26,周报读数,B,波交所周报 2/27（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0302/63049.html,周报未写明评估日，按周四计,216.89,43.83,5.99
+2026-03-06,周报中的周五评估,B,波交所周报 3/13（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0316/219295.html,,466.67,94.31,12.89
+2026-03-12,周报读数,B,波交所周报 3/13（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0316/219295.html,撰稿时读数,348.89,70.51,9.63
+2026-03-13,周报中的周五评估,B,波交所周报 3/20（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0323/219432.html,,427.67,86.43,11.81
+2026-03-19,周报读数,B,波交所周报 3/20（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0323/219432.html,,413.89,83.65,11.43
+2026-03-20,周报中的周五评估,B,波交所周报 3/27（信德海事转载）,https://www.xindemarinenews.com/m/view.php?aid=63306,,400.0,80.84,11.04
+2026-03-26,周报读数,B,波交所周报 3/27（信德海事转载）,https://www.xindemarinenews.com/m/view.php?aid=63306,,366.0,73.97,10.11
+2026-04-09,周报读数,A,Baltic tanker report week 15,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-15.html,,444.0,89.73,12.26
+2026-04-16,周报读数,A,Baltic tanker report week 16,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-16.html,,467.22,94.43,12.9
+2026-04-24,周报读数,B,波交所周报 4/24（信德海事转载）,https://www.xindemarinenews.com/market/shichangjiaoyi/2026/0427/63445.html,,459.28,92.82,12.68
+2026-05-11,转引,B,Fairway ETA 转引 Baltic,https://www.fairwayeta.com/insights/td3c-index-doesnt-exist-may-2026,,458.75,92.71,12.67
+2026-05-21,周报读数,B,波交所周报 5/22（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0526/221106.html,,402.5,81.35,11.11
+2026-06-18,周报读数,B,波交所周报 6/19（国际船舶网转载）,https://www.eworldship.com/html/2026/zuchuanshichang_0622/221871.html,,450.56,91.06,12.44
+2026-07-03,转引,B,Signal Group 周报 wk27,https://www.thesignalgroup.com/weekly-market-monitor/weekly-tanker-market-monitor-week-27-2026,,293.89,59.4,8.11
+2026-07-30,周报读数,A,Baltic tanker report week 31,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-31.html,,424.33,85.76,11.72
+2026-09-03,周报读数,A,Baltic tanker report week 36,https://www.balticexchange.com/en/data-services/WeeklyRoundup/tanker/news/2026/tanker-report-week-36.html,,677.22,136.87,18.7
+2026-09-10,转引,B,信德海事转引 Baltic,https://www.xindemarinenews.com/news/2098327758360031234,,821.11,165.95,22.67
+2026-09-24,转引,B,Oil & Gas Middle East 转引 Baltic（截至 9/25 当周）,https://www.oilandgasmiddleeast.com/news/what-is-happening-with-vlcc-rates,,1157.5,233.93,31.96

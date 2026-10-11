@@ -172,7 +172,7 @@ def report(o):
     w = L.append
     w("# 运输成本对期货价格的影响\n")
     w("## 1. 逐期明细（$/bbl）\n")
-    w("| 日期 | 即期运费 | 远期运费 | 战争险 | Brent | SC(USD) | SC−Brent | Dubai−Brent | 运费占Brent到岸 | 运费占SC | 阶段 | SC−Dubai−即期运费 | SC−Dubai−远期运费 |")
+    w("| 日期 | 即期运费 | 对照运费（FFA 或期租航次成本） | 战争险 | Brent | SC(USD) | SC−Brent | Dubai−Brent | 运费占Brent到岸 | 运费占SC | 阶段 | SC−Dubai−即期运费 | SC−Dubai−对照运费 |")
     w("|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     for r in o["rows"]:
         w(f"| {r['date']} | {fmt(r.get('freight'))} | {fmt(r.get('fwd_freight'))} | {fmt(r.get('war'))} | "
