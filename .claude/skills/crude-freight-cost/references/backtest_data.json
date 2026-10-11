@@ -1,0 +1,25 @@
+{
+  "_note": "公开数据点，用于回测 freight_calc.py 的口径。tier: A=指数机构原始发布, B=券商/行业媒体转引指数, C=二手媒体/自媒体。bunker 为当日新加坡燃油估值（Engine/Ship&Bunker 转引），用于物理模型回测。",
+  "td3c_pairs": [
+    {"date": "2026-02-20", "ws": 163.28, "tce": 151208, "tier": "B", "src": "新浪财经 2026-02-24 转引 Baltic TD3C", "vlsfo": 515, "hsfo": 459},
+    {"date": "2026-04-09(wk15)", "ws": 444.0, "tce": 444200, "tier": "A", "src": "Baltic Exchange tanker report week 15（'over $444,200'）", "vlsfo": null, "hsfo": null},
+    {"date": "2026-05-11", "ws": 458.75, "tce": 462102, "tier": "B", "src": "Fairway ETA 'The Index That Doesn't Exist' 转引 Baltic", "vlsfo": 825, "hsfo": null},
+    {"date": "2026-07-30(wk31)", "ws": 424.33, "tce": 423434, "tier": "A", "src": "Baltic Exchange tanker report week 31", "vlsfo": 830, "hsfo": null},
+    {"date": "2026-09-03(wk36)", "ws": 677.22, "tce": 704000, "tier": "A", "src": "Baltic Exchange tanker report week 36（'just under $704,000'）", "vlsfo": 840, "hsfo": null},
+    {"date": "2026-09-24(wk39)", "ws": 1157.5, "tce": 1230000, "tier": "C", "src": "ETI Substack week 39（'about $1.23m'，未与 Baltic 原文核对）", "vlsfo": 840, "hsfo": null}
+  ],
+  "sse_ct1": {"date": "2026-07-06", "ws": 281.94, "usd_t": 56.98, "tce_standard": 272950, "tce_eco": 265370, "tier": "A", "src": "交通运输部/上海航运交易所 中国进口原油运价指数 CTFI-CT1（Ras Tanura→Ningbo 27万吨）"},
+  "unit_checks": [
+    {"name": "上海航交所 2026-02 中东→宁波 41.85 $/t，按 7.33 桶/吨折 5.71 $/bbl", "usd_t": 41.85, "bpt": 7.33, "claimed_usd_bbl": 5.71, "tier": "B"},
+    {"name": "Trafigura 美湾→中国 VLCC 包干 7600 万美元 ≈ 38 $/bbl", "lumpsum": 76000000, "bbl": 2000000, "claimed_usd_bbl": 38, "tier": "B"},
+    {"name": "美湾→中国 11 月船期 8000 万美元 ≈ 40 $/bbl", "lumpsum": 80000000, "bbl": 2000000, "claimed_usd_bbl": 40, "tier": "B"},
+    {"name": "休斯顿→亚洲 5200 万美元/船 ≈ 26 $/bbl", "lumpsum": 52000000, "bbl": 2000000, "claimed_usd_bbl": 26, "tier": "C"}
+  ],
+  "claims": [
+    {"id": "mbcap_flat_2025", "text": "TD3C 2025 年 WS100 ≈ 8.90 $/t", "src": "mbcapitalstrategiesglobal.com 词条", "tier": "C"},
+    {"id": "lloyds_18bbl", "text": "TD3C 某周一读数隐含运费 18 $/bbl；同期延布→中韩实际最高成交 13 $/bbl", "src": "Lloyd's List（经 Fairway ETA 转引），2026-05", "tier": "B"},
+    {"id": "tse_2bbl", "text": "VLCC 100k $/day ≈ 2 $/bbl（中东→中国，7–10% IRR）", "src": "Thunder Said Energy", "tier": "B"},
+    {"id": "td34_ws450", "text": "阿曼湾→中国 WS≈450 折每桶约 11.5 美元", "src": "新浪转引", "tier": "C"},
+    {"id": "sep_27_28", "text": "中东→中国运费从 18–20 升至 27–28 $/bbl（2026-09），常态 1–2 $/bbl", "src": "期货日报转引（10jqka/cnfin 2026-09-15）", "tier": "B"}
+  ]
+}
