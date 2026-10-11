@@ -77,3 +77,7 @@ SC(USD) − Brent = (Dubai_FOB − Brent)      ← 产地卖方吸收部分（�
 | 汇率 | 外汇交易中心中间价 | |
 | 即期运费 | Baltic TD3C/TD34、上海航交所 CTFI CT1 | 用 `freight_calc.py` 换算成 $/bbl |
 | 远期运费 | Baltic FFA（优先用与 SC 交割月对应的季度合约）、经纪商期租报价（1 年期租是 12 个月平均，会低估近月运费） | 用 `freight_calc.py ws-from-tce` 把 $/天 换算成 $/bbl |
+
+## 附：2026 年运费走势数据
+
+`references/data_2026/` 收录了 2026 年 1–10 月整理好的公开数据：TD3C 37 个读数、TD22 包干价、远期（期租和 FFA）、运费占比、事件、阶段划分，均已换算成美元/桶，并标注了来源等级。对应的看板：https://claude.ai/artifact/2P7ZBN2ysSoUGPwEtZfBQ2 。分析新一段行情时，直接往这些 CSV 里追加数据点即可。
