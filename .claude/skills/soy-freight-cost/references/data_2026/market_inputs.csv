@@ -1,0 +1,8 @@
+obs_date,item,contract,value,unit,tier,source_desc,source_url
+2026-10-07,CBOT_SOY,2026-11 (X),1297.50,cents_bu,A,USDA AMS 结算价,https://www.indexbox.io/blog/usda-grain-futures-and-canola-bids-report-for-october-7-2026/
+2026-10-07,CBOT_SOY,2027-01 (F),1314.50,cents_bu,A,USDA AMS 结算价,https://www.indexbox.io/blog/usda-grain-futures-and-canola-bids-report-for-october-7-2026/
+2026-10-07,CBOT_SOY,2027-03 (H),1324.00,cents_bu,A,USDA AMS 结算价,https://www.indexbox.io/blog/usda-grain-futures-and-canola-bids-report-for-october-7-2026/
+2026-10-08,CBOT_SOY,2026-11 (X),1287.50,cents_bu,A,USDA AMS Minneapolis 日报结算价,https://www.ams.usda.gov/mnreports/ams_3046.pdf
+2026-09-30,USDCNY,中间价,6.7351,cny_per_usd,A,外汇交易中心中间价（媒体转引）,https://finance.eastmoney.com/a/202609303887456857.html
+2026-10-08,USDCNY,中间价,6.7367,cny_per_usd,A,外汇交易中心中间价（媒体转引）,https://cj.sina.com.cn/articles/view/1663612603/6328b6bb0200241is
+2026-10-09,USDCNY,中间价,6.7330,cny_per_usd,A,外汇交易中心中间价（媒体转引）,https://cj.sina.com.cn/articles/view/1663612603/6328b6bb0200241is

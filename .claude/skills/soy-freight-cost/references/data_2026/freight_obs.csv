@@ -1,0 +1,8 @@
+obs_date,route,cargo,vessel,usd_t,obs_type,tier,source_desc,source_url,note
+2026-09-23,P8 桑托斯→青岛,粮食（大豆）,巴拿马型 6.6 万吨,56.53,指数转引,B,Baltic P8（Cyprus Shipping News 转引，所在周约 9/23）,https://cyprusshippingnews.com/2026/09/25/grain-in-focus-us-soybean-sailings-to-china-recover-through-september/,周度转引，具体评估日待核
+2026-09-30,桑托斯→中国,粮食（大豆）,超灵便/巴拿马型 5.4–5.9 万吨,57.75,机构估值,B,World Perspectives Transportation Perspectives 2026-10-01,https://worldperspectives.com/storage/media/transportation-perspectives-1oct2026.pdf,
+2026-09-30,桑托斯→中国北方,粮食（大豆）,巴拿马型 6.6 万吨±10%,55.46,机构估值,B,World Perspectives Transportation Perspectives 2026-10-01,https://worldperspectives.com/storage/media/transportation-perspectives-1oct2026.pdf,与 P8 同船型、同航线
+2026-09-23,C3 图巴朗→青岛,铁矿石,海岬型,42.96,指数转引,B,Baltic C3（Cyprus Shipping News 转引）,https://cyprusshippingnews.com/2026/09/25/grain-in-focus-us-soybean-sailings-to-china-recover-through-september/,铁矿石航线，不能当作大豆运费
+2026-09-09,巴西→中国（未注明货种）,未注明（实为铁矿石口径）,未注明,42.22,快讯,C,Mysteel 钢铁网海运快讯,https://list1.m.mysteel.com/zhishi/baxihaiyun.html,与 C3 同量级、与“西澳→中国”并列发布，判断为铁矿石运费
+2026-09-29,巴西→中国（未注明货种）,未注明（实为铁矿石口径）,未注明,39.97,快讯,C,Mysteel 钢铁网海运快讯,https://list1.m.mysteel.com/zhishi/baxihaiyun.html,同上
+2026-09-30,巴西→中国（未注明货种）,未注明（实为铁矿石口径）,未注明,39.50,快讯,C,Mysteel 钢铁网海运快讯,https://list1.m.mysteel.com/zhishi/baxihaiyun.html,同上
