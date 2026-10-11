@@ -213,7 +213,7 @@ def report(o):
         w(f"- 水平值：SC−Brent = {lv['alpha']:.2f} + {lv['beta']:.2f} × 即期运费（n={lv['n']}，R²={fmt(lv['r2'])}）")
     lf = o.get("levels_sc_brent_fwd")
     if lf:
-        w(f"- 水平值：SC−Brent = {lf['alpha']:.2f} + {lf['beta']:.2f} × 远期运费（n={lf['n']}，R²={fmt(lf['r2'])}）")
+        w(f"- 水平值：SC−Brent = {lf['alpha']:.2f} + {lf['beta']:.2f} × 对照运费（n={lf['n']}，R²={fmt(lf['r2'])}）")
     at = o.get("sc_attrib")
     if at:
         w(f"\n**SC 价格变化归因（{at['start']}→{at['end']}，元/桶）**：ΔSC {at['d_sc']:+.1f} = Brent {at['brent']:+.1f}"
@@ -221,7 +221,7 @@ def report(o):
           f"同期即期运费变化折合 {at['freight']:+.1f} 元/桶，价差部分只占其 "
           f"{(at['spread'] / at['freight'] * 100) if at['freight'] else float('nan'):.0f}%")
     w("\n解读：β≈1 表示运费几乎全部由买方/到岸价承担；β 明显小于 1 时，差额要么由产地卖方吸收（看 Dubai−Brent），"
-      "要么说明期货在交易远期运费而不是即期指数（看第 1 节最后两列哪一列更接近 0），剩下的是国内供需、仓单、情绪等因素。"
+      "要么提示期货未按即期指数计入运费（可对照第 1 节最后两列，但需多个日期一致才能下结论），剩下的是国内供需、仓单、情绪等因素。"
       "样本少于 20 个点时，只能把 β 当作方向参考。\n")
     return "\n".join(L)
 
